@@ -23,8 +23,8 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
-import TabViewExample from './TabExample'
+import {DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
+import TabViewExample from './TabExample';
 
 const theme = {
   ...DefaultTheme,
@@ -36,14 +36,12 @@ const theme = {
   },
 };
 export default class App extends React.Component {
-
   render() {
     return (
       <PaperProvider theme={theme}>
-        <TabViewExample></TabViewExample>
+        <TabViewExample />
       </PaperProvider>
-
-    )
+    );
   }
 }
 
@@ -85,4 +83,3 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 });
-
